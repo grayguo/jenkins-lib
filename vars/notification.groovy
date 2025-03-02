@@ -1,6 +1,6 @@
-import org.ggp.Notifiation
+import org.ggp.Notification
 
-def notification = new Notifiation(this)
+def notification = new Notification(this)
 
 node {
     notification.send()
