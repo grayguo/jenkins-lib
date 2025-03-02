@@ -1,3 +1,7 @@
-def send () {
-    echo "SENDING: ..."
+import org.ggp.Notifiation
+
+def notification = new Notifiation(this)
+
+node {
+    notification.send()
 }
