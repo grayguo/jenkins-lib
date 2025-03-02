@@ -10,6 +10,9 @@ class Notification implements Serializable {
 
     def send() {
         steps.sh "cat /etc/os-release"
+        steps.env.each { k, v ->
+            println "${k} = ${v}"
+        }
     }
 
 }
